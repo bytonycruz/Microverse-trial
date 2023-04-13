@@ -1,30 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>microverse trial Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
-
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-	
+    <!-- the header is for the form title-->
+    <header>
+      <h1>microverse Survey Form</h1>
+      <p>Thank you for taking the time to help us improve the platform:</p>
+    </header>
+    <!-- this is the begining of the form-->
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br />
 
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br />
 
+      <label for="age">Age (optional):</label>
+      <input type="number" id="age" name="age" /><br />
 
-	<h1>"Hello world, we are software developers!"</h1>
-    <!--
+      <label for="current-role"
+        >Which option best describes your current role?</label
+      >
+      <select id="gender" name="gender">
+        <option value="student">Student</option>
+        <option value="full-time-job">Full time job</option>
+        <option value="full-time-learner">Full time learner</option>
+        <option value="prefer-not-to-say">Prefer not to say</option></select
+      ><br />
+      <label for="would-recommend"
+      >Would you recommend microverse to a friend?</label
+    >
+    <select id="gender" name="gender">
+      <option value="full-time-job">Definitely</option>
+      <option value="full-time-learner">Maybe</option>
+      <option value="prefer-not-to-say">Not sure</option></select
+    ><br />
 
-    Hello Camper!
+    <label for="favorite-feature"
+    >What is your favorite feature of microverse?</label
+  >
+  <select id="gender" name="gender">
+    <option value="challenges">Challenges</option>
+    <option value="projects">Projects</option>
+    option value="Open Source">Open Source</option>
+    <option value="community">Community</option></select
+  ><br />
+      <label for="feedback">Any comments or suggestions?:</label>
+      <textarea id="feedback" name="feedback"></textarea><br />
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
-    <script  src="js/index.js"></script>
+      <button type="submit">Submit</button>
+    </form>
+    <footer>
+      <p>Thank you for your feedback!</p>
+    </footer>
   </body>
 </html>
