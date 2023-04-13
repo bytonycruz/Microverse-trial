@@ -55,3 +55,21 @@ input[type="text"],
   #gender{
     display: block;
   }
+
+  button[type="submit"]:hover {
+    background-color: #0e1d2d;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #132743;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 0.9em;
+  }
+  
+  footer p {
+    margin: 0;
+  }
