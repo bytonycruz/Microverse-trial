@@ -4,12 +4,12 @@
     <title>microverse trial Survey Form</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <!-- the header is for the form title-->
     <header>
-      <h1>microverse Survey Form</h1>
+      <h1>Microverse Trial</h1>
       <p>Thank you for taking the time to help us improve the platform:</p>
     </header>
     <!-- this is the begining of the form-->
@@ -35,11 +35,22 @@
       <label for="would-recommend"
       >Would you recommend microverse to a friend?</label
     >
-    <select id="gender" name="gender">
-      <option value="full-time-job">Definitely</option>
-      <option value="full-time-learner">Maybe</option>
-      <option value="prefer-not-to-say">Not sure</option></select
-    ><br />
+      <div>
+        <input type="radio" id="huey" name="drone" value="huey"
+               checked>
+        <label for="huey">definitely</label>
+      </div>
+  
+      <div>
+        <input type="radio" id="dewey" name="drone" value="dewey">
+        <label for="dewey">Maybe</label>
+      </div>
+  
+      <div>
+        <input type="radio" id="louie" name="drone" value="louie">
+        <label for="louie">Not sure</label>
+      </div>
+      ><br />
 
     <label for="favorite-feature"
     >What is your favorite feature of microverse?</label
